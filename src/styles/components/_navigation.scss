@@ -1,0 +1,36 @@
+nav{
+    margin-right: 5rem;
+
+    .hamburger{
+        display:none;
+        cursor: pointer;
+
+        svg{
+            width: 1.5em !important;
+            height: 1.5em !important;
+        }
+    }
+
+    .cancel-hamburger{
+        position: absolute;
+        right: 30px;
+        top: 25px;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        li{
+            cursor: pointer;
+            margin-right: 2rem;
+        }
+
+        li a{
+            color: #2e5f6f;
+            text-decoration: none;
+        };
+    }
+
+}

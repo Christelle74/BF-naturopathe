@@ -1,0 +1,17 @@
+.footer{
+    height: 12vh;
+    background-color: #9ac2ba;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    .bf{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .cp{
+        font-size: 12px;
+    }
+}
