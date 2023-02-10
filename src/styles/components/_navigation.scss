@@ -1,6 +1,64 @@
 nav{
     margin-right: 5rem;
 
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 18px;
+        //gap: 10px;
+        
+        li{
+            cursor: pointer;
+            margin-right: 2rem;
+        
+            a{
+                color: #9ac2ba;
+                text-decoration: none;
+                position: relative;
+                //transition: 0.5s;
+                padding: 0 8px;
+
+                &:hover{
+                    color: #E2C163;
+                    
+                }
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    background-color: red;
+                    height: 3px;
+                    width: 0;
+                    left: 0;
+                    bottom: -10px;
+                    transition: 0.3s;
+                }
+                
+
+                &:hover:after{
+                    width: 100%;
+                }
+                .active{
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 3px;
+                        width: 12px;
+                        background: clr(secondary, yellow);
+                        border-radius: 2px;
+                    }
+                }
+            };
+        
+        }
+
+        
+    }
+
     .hamburger{
         display:none;
         cursor: pointer;
@@ -15,22 +73,7 @@ nav{
         position: absolute;
         right: 30px;
         top: 25px;
-    }
-
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-        li{
-            cursor: pointer;
-            margin-right: 2rem;
-        }
-
-        li a{
-            color: #2e5f6f;
-            text-decoration: none;
-        };
+        z-index: 10;
     }
 
 }

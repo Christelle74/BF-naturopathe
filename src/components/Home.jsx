@@ -3,7 +3,7 @@ import Photo from '../assets/Béa_2014.webp'
 
 const Home = () => {
     return (
-        <section>
+        <section id="Accueil">
             <div data-aos='flip-right'>
                 <img  className='photo' src={Photo} alt="Beatrice Fabry, naturopathe" />
             </div>

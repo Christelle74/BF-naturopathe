@@ -1,7 +1,9 @@
 .header{
-    height: 12vh;
-    background-color: #9ac2ba;
+    height: 6rem;
+    background-color: rgb(45, 45, 45);
     display:flex;
     justify-content: space-between;
     align-items: center;
+    // position: fixed;
+    width: 100%;
 }

@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css"
+import UpButton from './components/UpButton';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <>
       <Header/>
       <main>
+        <UpButton/>
         <Home/>
         <About/>
         <Naturopathe/>

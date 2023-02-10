@@ -27,7 +27,7 @@ const Navigation = () => {
                     <li
                         key={index}
                         onClick={()=> handleActiveLink(index)}
-                        className={currentLink===index ? 'active' : ''}
+                        className={currentLink === index ? 'active' : ''}
                     >
                         <a href={'#'+link}>{link}</a>
                     </li>

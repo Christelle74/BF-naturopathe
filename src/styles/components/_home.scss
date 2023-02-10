@@ -11,18 +11,41 @@
     }
     
     button{
+        position: relative;
         margin: 20px 0;
         padding: 10px;
         border-radius: 10px;
-        background-color: #2e5f6f;
+        background: linear-gradient(90deg, rgba(255,254,223,1) 13%, rgba(255,195,88,1) 45%, rgba(237,127,1,1) 78%);
         color: #9ac2ba;
         font-size: 18px;
         cursor: pointer;
-        
+        z-index: 1;
+        transition: 0.5s;
+        border: 1px solid rgb(45, 45, 45);
+
         &:hover{
-            background: linear-gradient(90deg, rgba(255,254,223,1) 13%, rgba(255,195,88,1) 45%, rgba(237,127,1,1) 78%);
-            color: #2e5f6f;
+            color:#2e5f6f;
             scale: 1.2;
+        }
+        
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #2e5f6f ;
+            z-index: -1;
+            transform-origin: left;
+            transition: transform 0.5s ease;
+            transform: scaleX(1);
+            
+        }
+        &:hover:before{
+            transform-origin: right;
+            transition: transform 0.5s ease;
+            transform: scaleX(0); 
         }
     }
 }

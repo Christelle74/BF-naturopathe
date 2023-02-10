@@ -1,7 +1,9 @@
-@font-face {
-    font-family: "Bookman";
-    src: url("https://fontsforyou.com/fonts/b/Bookman.ttf");
-}
+// @font-face {
+//     font-family: "Bookman";
+//     src: url("https://fontsforyou.com/fonts/b/Bookman.ttf");
+// }
+
+@import url("https://fontsforyou.com/fonts/b/Bookman.ttf");
 
 #root {
     position:relative
@@ -10,8 +12,10 @@
 *,
 *::before,
 *::after {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: "Bookman";
+    font-family: 'Bookman';
 }
 
 *::-webkit-scrollbar{
@@ -51,7 +55,7 @@ main{
         height: 100%;
         z-index: -1;
         opacity: 0.6;
-        background-image: url("../assets/c945cf45-24e9-4d16-bfbb-ad1641c4b9bf.jpg");
+        background-image: url("../assets/flower-3094349_1920.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -68,6 +72,7 @@ section{
     width: 80%;
     height: 30rem;
     background-color: white;
+    border: 2px solid #E2C163;
     
     h2{
         margin: 30px 0;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Physionutrition = () => {
     return (
-        <section>
+        <section id="Physionutrition">
             <div data-aos='fade-up'>
                 <h2>Physionutrition</h2>
                 <p>C'est quoi ?</p>
